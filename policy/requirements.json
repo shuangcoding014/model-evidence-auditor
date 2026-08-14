@@ -1,0 +1,68 @@
+[
+  {
+    "id": "EU-AIA-13-INTERPRETABILITY",
+    "framework": "EU AI Act",
+    "article": "Article 13",
+    "requirement": "Provide information enabling deployers to interpret outputs and use them appropriately.",
+    "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "metric": "fidelityError",
+    "direction": "MAXIMUM",
+    "researchThreshold": 0.1,
+    "documentationField": null
+  },
+  {
+    "id": "EU-AIA-13-LIMITATIONS",
+    "framework": "EU AI Act",
+    "article": "Article 13(3)",
+    "requirement": "Document system characteristics, capabilities, and limitations.",
+    "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "knownLimitations"
+  },
+  {
+    "id": "EU-AIA-14-HUMAN-OVERSIGHT",
+    "framework": "EU AI Act",
+    "article": "Article 14",
+    "requirement": "Document measures that support effective human oversight.",
+    "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "humanOversight"
+  },
+  {
+    "id": "GDPR-5-DATA-MINIMISATION",
+    "framework": "GDPR",
+    "article": "Article 5(1)(c)",
+    "requirement": "Document why personal data are adequate, relevant, and limited to what is necessary.",
+    "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "dataMinimisationRationale"
+  },
+  {
+    "id": "CCPA-1798-185-NOTICE",
+    "framework": "California Consumer Privacy Act",
+    "article": "Cal. Civ. Code 1798.185",
+    "requirement": "Maintain evidence supporting required consumer-facing disclosures and notices.",
+    "sourceUrl": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&chapter=1.&part=4.&lawCode=CIV&title=1.81.5",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "consumerNotice"
+  },
+  {
+    "id": "ISO27701-CONTROL-MAPPING",
+    "framework": "ISO/IEC 27701",
+    "article": "PIMS control mapping",
+    "requirement": "Record whether a reviewed PIMS control mapping exists; copyrighted control text is not redistributed.",
+    "sourceUrl": "https://www.iso.org/standard/85819.html",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "iso27701ControlMapping"
+  }
+]

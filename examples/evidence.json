@@ -1,0 +1,17 @@
+{
+  "systemName": "Synthetic Cyber-Risk Triage Model",
+  "intendedPurpose": "Prioritize synthetic security alerts for analyst review; never take autonomous action.",
+  "riskContext": "Educational benchmark with no personal or production security data.",
+  "metrics": {
+    "fidelityError": 0.02,
+    "top3Stability": 0.91,
+    "sliceFidelityGap": 0.03
+  },
+  "documentation": {
+    "knownLimitations": true,
+    "humanOversight": true,
+    "dataMinimisationRationale": false,
+    "consumerNotice": false,
+    "iso27701ControlMapping": true
+  }
+}
