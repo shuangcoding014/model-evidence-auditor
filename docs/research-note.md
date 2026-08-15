@@ -6,22 +6,21 @@ What evidence should accompany a claim that an explanation helps a deployer inte
 
 ## Approach
 
-The Java audit model separates four concepts often collapsed into “explainability”:
+The prototype keeps several concepts that are often collapsed into “explainability” separate:
 
-1. **fidelity** — approximate reconstruction error between predictions and summed local contributions;
-2. **stability** — overlap and rank agreement under small perturbations;
-3. **slice reliability** — disparity in fidelity error across synthetic audit groups;
-4. **documentation** — intended users, limitations, and human-oversight instructions.
+1. **fidelity**: reconstruction error between a model's log-odds and summed local contributions;
+2. **ranking overlap**: top-k Jaccard overlap between two contribution maps;
+3. **documentation**: recorded limitations, intended use, and human-oversight material.
 
 The JSON requirements registry makes the mapping, primary source, metric, direction, documentation field, and researcher-chosen threshold reviewable in Git history. Java records validate every requirement at ingestion so malformed or unsourced mappings fail early.
 
 ## Expected interpretation
 
-A low reconstruction error can coexist with unstable feature rankings. Both can coexist with explanations that are meaningless to a particular user. The report therefore preserves separate findings rather than producing a single “XAI score.”
+A low reconstruction error can coexist with unstable feature rankings. Both can coexist with explanations that are meaningless to a particular user. The report therefore preserves separate findings instead of producing a single "XAI score."
 
 ## Limitations and extensions
 
-The demo evidence is synthetic, the linear explanation is not causal, and documentation booleans establish only artifact availability. A research extension would ingest model-independent explanations, add human-subject usefulness evaluation, bootstrap confidence intervals, test multilingual notices, and perform double-coded legal analysis with inter-rater agreement.
+The CLI audits supplied JSON evidence; it does not train a model or compute metrics. The demo evidence is fictional, the linear explanation is not causal, and documentation booleans establish only artifact availability. A research extension could ingest model-independent explanations, calculate confidence intervals and slice diagnostics, add human-subject usefulness evaluation, test multilingual notices, and perform double-coded legal analysis with inter-rater agreement.
 
 ## Primary references
 

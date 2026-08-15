@@ -24,7 +24,7 @@ LinearRiskModel -> ExplanationEvaluator -> metric evidence
 
 ### Evidence states instead of pass/fail compliance
 
-The engine emits `EVIDENCE_PRESENT`, `EVIDENCE_GAP`, or `NOT_APPLICABLE`. A technical metric cannot by itself establish that a legal obligation has been satisfied. This vocabulary keeps the software useful for interdisciplinary review without presenting it as automated legal advice.
+The engine emits `EVIDENCE_PRESENT` or `EVIDENCE_GAP`. Framework applicability is intentionally outside the automatic check and must be established before using a requirement registry. A technical metric cannot by itself establish that a legal obligation has been satisfied. This vocabulary keeps the software useful for interdisciplinary review without presenting it as automated legal advice.
 
 ### Versioned and reviewable policy mappings
 
