@@ -1,7 +1,7 @@
-package dev.portfolio.trustreg;
+package dev.portfolio.modelevidence;
 
-import dev.portfolio.trustreg.xai.ExplanationEvaluator;
-import dev.portfolio.trustreg.xai.LinearRiskModel;
+import dev.portfolio.modelevidence.xai.ExplanationEvaluator;
+import dev.portfolio.modelevidence.xai.LinearRiskModel;
 import org.junit.jupiter.api.Test;
 import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;

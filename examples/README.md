@@ -1,10 +1,9 @@
 # Example evidence package
 
-`evidence.json` describes a fictional cyber-risk triage system using synthetic evidence. It deliberately includes both present evidence and gaps so the generated report demonstrates honest audit behavior.
+`evidence.json` describes a fictional support-ticket routing model. It contains both present evidence and one intentional gap so the generated report demonstrates the two audit states.
 
-Expected result for the included requirement registry:
+Expected result for the included transparent-model profile:
 
-- evidence present: explanation fidelity, known limitations, human oversight, ISO mapping;
-- evidence gaps: GDPR data-minimisation rationale and CCPA consumer notice;
-- interpretation: an evidence gap is a prompt for investigation, not proof of a legal violation.
-
+- evidence present: fidelity, ranking stability, known limitations, human review, and data provenance;
+- evidence gap: evaluation protocol;
+- interpretation: a gap identifies missing evidence and does not by itself establish model quality.

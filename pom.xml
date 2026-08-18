@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>dev.portfolio</groupId>
-  <artifactId>trustreg-auditor</artifactId>
+  <artifactId>model-evidence-auditor</artifactId>
   <version>0.1.0</version>
-  <name>TrustReg Auditor</name>
+  <name>ModelEvidence Auditor</name>
   <properties>
     <maven.compiler.release>21</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,9 +31,9 @@
         <executions><execution><phase>package</phase><goals><goal>shade</goal></goals><configuration>
           <createDependencyReducedPom>false</createDependencyReducedPom>
           <transformers><transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-            <mainClass>dev.portfolio.trustreg.TrustRegCli</mainClass>
+            <mainClass>dev.portfolio.modelevidence.ModelEvidenceCli</mainClass>
           </transformer></transformers>
-          <finalName>trustreg-auditor</finalName>
+          <finalName>model-evidence-auditor</finalName>
         </configuration></execution></executions>
       </plugin>
     </plugins>

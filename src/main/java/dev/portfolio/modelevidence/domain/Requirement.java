@@ -1,9 +1,9 @@
-package dev.portfolio.trustreg.domain;
+package dev.portfolio.modelevidence.domain;
 
 public record Requirement(
         String id,
-        String framework,
-        String article,
+        String profile,
+        String reference,
         String requirement,
         String sourceUrl,
         String metric,

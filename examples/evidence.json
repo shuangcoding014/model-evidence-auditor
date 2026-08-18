@@ -1,17 +1,15 @@
 {
-  "systemName": "Synthetic Cyber-Risk Triage Model",
-  "intendedPurpose": "Prioritize synthetic security alerts for analyst review; never take autonomous action.",
-  "riskContext": "Educational benchmark with no personal or production security data.",
+  "systemName": "Fictional Support-Ticket Routing Model",
+  "intendedPurpose": "Prioritize fictional support tickets for human review; never take autonomous action.",
+  "riskContext": "Educational example with no personal or production data.",
   "metrics": {
     "fidelityError": 0.02,
-    "top3Stability": 0.91,
-    "sliceFidelityGap": 0.03
+    "top3Stability": 0.91
   },
   "documentation": {
     "knownLimitations": true,
-    "humanOversight": true,
-    "dataMinimisationRationale": false,
-    "consumerNotice": false,
-    "iso27701ControlMapping": true
+    "humanReviewProcedure": true,
+    "dataProvenance": true,
+    "evaluationProtocol": false
   }
 }

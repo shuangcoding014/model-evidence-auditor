@@ -1,9 +1,9 @@
-package dev.portfolio.trustreg.domain;
+package dev.portfolio.modelevidence.domain;
 
 public record Finding(
         String requirementId,
-        String framework,
-        String article,
+        String profile,
+        String reference,
         EvidenceStatus status,
         String observedEvidence,
         String interpretation,

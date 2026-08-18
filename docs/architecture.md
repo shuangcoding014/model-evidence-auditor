@@ -3,7 +3,7 @@
 ## Component map
 
 ```text
-policy/requirements.json       examples/evidence.json
+profiles/transparent-model-review.json       examples/evidence.json
           |                              |
           +-------- JsonRepository ------+
                          |
@@ -18,31 +18,26 @@ LinearRiskModel -> ExplanationEvaluator -> metric evidence
 
 ## Design decisions
 
-### Typed evidence instead of free-form compliance claims
+### Typed evidence
 
-`Requirement`, `SystemEvidence`, and `Finding` are Java records. A requirement must contain an HTTPS primary-source link and exactly one supported evidence mechanism: a metric with a direction and threshold, or a documentation field. Invalid mappings fail at ingestion instead of silently producing a report.
+`Requirement`, `SystemEvidence`, and `Finding` are Java records. Each rule contains an HTTPS source and exactly one evidence mechanism: a metric threshold or a documentation field. Invalid profiles fail when loaded.
 
-### Evidence states instead of pass/fail compliance
+### Evidence states instead of a composite score
 
-The engine emits `EVIDENCE_PRESENT` or `EVIDENCE_GAP`. Framework applicability is intentionally outside the automatic check and must be established before using a requirement registry. A technical metric cannot by itself establish that a legal obligation has been satisfied. This vocabulary keeps the software useful for interdisciplinary review without presenting it as automated legal advice.
+The engine emits `EVIDENCE_PRESENT` or `EVIDENCE_GAP`. Separate findings preserve context that would be lost in a single score and make missing artifacts visible.
 
-### Versioned and reviewable policy mappings
+### Versioned profiles
 
-Requirements live in JSON so changes are visible in Git. Every entry records its jurisdiction/framework, article, engineering interpretation, source, and evidence test. In a research deployment, each mapping would additionally have two independent coders, an adjudication record, and effective dates.
+Requirements live in JSON so profile changes remain reviewable in Git. Each entry records a profile, reference, interpretation, source, and evidence test. Teams can create profiles for different models or review contexts without changing the Java engine.
 
-### No redistribution of ISO text
+### Transparent metric example
 
-ISO/IEC 27701 is relevant to the project's privacy-management analysis, but the standard is copyrighted. The repository links to ISO's official catalogue and models whether an authorized control mapping has been reviewed; it does not reproduce proprietary control language.
-
-### Small transparent ML example
-
-The Java `LinearRiskModel` exists to test explanation mechanics. Exact log-odds contributions make the expected fidelity result independently checkable. It is a synthetic teaching model, not a production AI system or a claim that linear models solve explainability.
+The Java `LinearRiskModel` exists to test explanation mechanics. Exact log-odds contributions make the expected fidelity result independently checkable. It is a fictional teaching model, not a production AI system.
 
 ## Extension points
 
-- add Jackson polymorphic evidence tests for confidence intervals, robustness, and human evaluation;
-- ingest model cards using a documented JSON Schema;
-- add framework applicability logic based on system role, use context, geography, and risk classification;
-- implement dual-coder policy annotations and Cohen's kappa;
-- connect external Python/R evaluation jobs through versioned JSON artifacts without moving the Java audit core;
-- add provenance hashes and signed reports for industrial audit trails.
+- validate evidence packages with JSON Schema;
+- add confidence intervals, robustness checks, and human evaluation;
+- support profile applicability metadata;
+- add provenance hashes and signed reports;
+- connect external Python or R evaluation jobs through versioned JSON artifacts.

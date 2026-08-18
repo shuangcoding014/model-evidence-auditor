@@ -1,17 +1,17 @@
-package dev.portfolio.trustreg;
+package dev.portfolio.modelevidence;
 
-import dev.portfolio.trustreg.audit.RequirementAuditor;
-import dev.portfolio.trustreg.io.JsonRepository;
-import dev.portfolio.trustreg.report.MarkdownReporter;
+import dev.portfolio.modelevidence.audit.RequirementAuditor;
+import dev.portfolio.modelevidence.io.JsonRepository;
+import dev.portfolio.modelevidence.report.MarkdownReporter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public final class TrustRegCli {
-    private TrustRegCli() {}
+public final class ModelEvidenceCli {
+    private ModelEvidenceCli() {}
 
     public static void main(String[] args) throws Exception {
         if (args.length != 3) {
-            System.err.println("Usage: java -jar trustreg-auditor.jar REQUIREMENTS.json EVIDENCE.json OUTPUT_DIR");
+            System.err.println("Usage: java -jar model-evidence-auditor.jar REQUIREMENTS.json EVIDENCE.json OUTPUT_DIR");
             System.exit(2);
         }
         Path output = Path.of(args[2]);

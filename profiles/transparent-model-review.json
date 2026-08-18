@@ -1,0 +1,68 @@
+[
+  {
+    "id": "EXPLANATION-FIDELITY",
+    "profile": "Transparent Model Review",
+    "reference": "Explanation fidelity",
+    "requirement": "Record a reconstruction error for the explanation method.",
+    "sourceUrl": "https://www.nist.gov/publications/four-principles-explainable-artificial-intelligence",
+    "metric": "fidelityError",
+    "direction": "MAXIMUM",
+    "researchThreshold": 0.1,
+    "documentationField": null
+  },
+  {
+    "id": "EXPLANATION-STABILITY",
+    "profile": "Transparent Model Review",
+    "reference": "Ranking overlap",
+    "requirement": "Record the stability of the most influential features across repeated explanations.",
+    "sourceUrl": "https://www.nist.gov/publications/four-principles-explainable-artificial-intelligence",
+    "metric": "top3Stability",
+    "direction": "MINIMUM",
+    "researchThreshold": 0.8,
+    "documentationField": null
+  },
+  {
+    "id": "DOCUMENT-KNOWN-LIMITATIONS",
+    "profile": "Transparent Model Review",
+    "reference": "Known limitations",
+    "requirement": "Document important limitations and unsupported uses.",
+    "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "knownLimitations"
+  },
+  {
+    "id": "DOCUMENT-HUMAN-REVIEW",
+    "profile": "Transparent Model Review",
+    "reference": "Human review procedure",
+    "requirement": "Document when and how a person reviews model output.",
+    "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "humanReviewProcedure"
+  },
+  {
+    "id": "DOCUMENT-DATA-PROVENANCE",
+    "profile": "Transparent Model Review",
+    "reference": "Data provenance",
+    "requirement": "Record the origin and intended use of evaluation data.",
+    "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "dataProvenance"
+  },
+  {
+    "id": "DOCUMENT-EVALUATION-PROTOCOL",
+    "profile": "Transparent Model Review",
+    "reference": "Evaluation protocol",
+    "requirement": "Document the evaluation procedure and its scope.",
+    "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "metric": null,
+    "direction": null,
+    "researchThreshold": null,
+    "documentationField": "evaluationProtocol"
+  }
+]

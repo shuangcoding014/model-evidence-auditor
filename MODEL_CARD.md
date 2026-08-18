@@ -16,6 +16,6 @@ The repository does not contain or generate a training dataset. Unit tests use s
 
 - exact log-odds reconstruction error as a limited fidelity diagnostic;
 - top-k Jaccard overlap for comparing two contribution rankings;
-- documentation-presence checks linked to a versioned regulatory crosswalk.
+- documentation-presence checks linked to a versioned review profile.
 
 The CLI consumes precomputed evidence and does not calculate these metrics. The sample JSON contains additional illustrative fields that are not active audit rules. All thresholds are declared research choices. Passing one is evidence for review, not proof of compliance, fairness, usefulness, or safety.

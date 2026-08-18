@@ -1,4 +1,4 @@
-package dev.portfolio.trustreg.xai;
+package dev.portfolio.modelevidence.xai;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

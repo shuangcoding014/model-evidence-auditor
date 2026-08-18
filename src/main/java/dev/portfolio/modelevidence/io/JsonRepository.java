@@ -1,9 +1,9 @@
-package dev.portfolio.trustreg.io;
+package dev.portfolio.modelevidence.io;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import dev.portfolio.trustreg.domain.*;
+import dev.portfolio.modelevidence.domain.*;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;

@@ -1,6 +1,6 @@
-package dev.portfolio.trustreg.audit;
+package dev.portfolio.modelevidence.audit;
 
-import dev.portfolio.trustreg.domain.*;
+import dev.portfolio.modelevidence.domain.*;
 import java.util.List;
 
 public final class RequirementAuditor {
@@ -25,7 +25,7 @@ public final class RequirementAuditor {
         String interpretation = present
                 ? "Requested evidence is present for researcher review."
                 : "Evidence gap: collect or improve this evidence before making a trustworthiness claim.";
-        return new Finding(rule.id(), rule.framework(), rule.article(),
+        return new Finding(rule.id(), rule.profile(), rule.reference(),
                 present ? EvidenceStatus.EVIDENCE_PRESENT : EvidenceStatus.EVIDENCE_GAP,
                 observed, interpretation, rule.sourceUrl());
     }
